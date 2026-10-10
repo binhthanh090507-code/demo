@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nhập Thông Tin Sinh Viên</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Font chữ giống trong tài liệu */
+            margin: 20px;
+        }
+        .title-bai {
+            color: darkred;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 700px; /* Độ rộng bảng */
+        }
+        table, th, td {
+            border: 1px solid #777; /* Viền của bảng */
+        }
+        td {
+            padding: 5px 10px;
+            vertical-align: top;
+        }
+        .col-label {
+            width: 40%;
+            text-transform: uppercase;
+        }
+        .col-input {
+            width: 60%;
+        }
+        input[type="text"], input[type="date"], input[type="password"] {
+            padding: 2px;
+        }
+        input[type="submit"] {
+            margin-top: 5px;
+            padding: 4px 15px;
+            background-color: #efefef;
+            border: 1px solid #777;
+            cursor: pointer;
+        }
+        label {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <h2>NHẬP THÔNG TIN SINH VIÊN</h2>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td class="col-label">Họ và tên:</td>
+                <td class="col-input"><input type="text" name="hoTen"></td>
+            </tr>
+            <tr>
+                <td class="col-label">Mã số sinh viên :</td>
+                <td class="col-input"><input type="text" name="mssv"></td>
+            </tr>
+            <tr>
+                <td class="col-label">Ngày sinh:</td>
+                <td class="col-input"><input type="date" name="ngaySinh"></td>
+            </tr>
+            <tr>
+                <td class="col-label">Chuyên ngành:</td>
+                <td class="col-input">
+                    <input type="radio" name="chuyenNganh" id="cnpm" value="CNPM"> <label for="cnpm">CNPM</label>
+                    <input type="radio" name="chuyenNganh" id="httt" value="HTTT"> <label for="httt">HTTT</label>
+                    <input type="radio" name="chuyenNganh" id="anm" value="ANM"> <label for="anm">An ninh mạng</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">Sở thích:</td>
+                <td class="col-input">
+                    <input type="checkbox" name="soThich" id="vct" value="Viết chương trình"> <label for="vct">Viết chương trình</label><br>
+                    <input type="checkbox" name="soThich" id="ptcsdl" value="Phân tích CSDL"> <label for="ptcsdl">Phân tích CSDL</label><br>
+                    <input type="checkbox" name="soThich" id="xdsdm" value="Xây dựng sơ đồ mạng"> <label for="xdsdm">Xây dựng sơ đồ mạng</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">Màu sắc yêu thích:</td>
+                <td class="col-input"><input type="color" name="mauSac" value="#000000"></td>
+            </tr>
+            <tr>
+                <td class="col-label">Hình đại diện:</td>
+                <td class="col-input"><input type="file" name="hinhDaiDien"></td>
+            </tr>
+            <tr>
+                <td class="col-label">Tên đăng nhập web trường:</td>
+                <td class="col-input"><input type="text" name="tenDangNhap"></td>
+            </tr>
+            <tr>
+                <td class="col-label">Mật khẩu đăng nhập web trường:</td>
+                <td class="col-input"><input type="password" name="matKhau"></td>
+            </tr>
+            <tr>
+                <td class="col-label"></td> <!-- Ô trống -->
+                <td class="col-input"><input type="submit" value="Gửi dữ liệu về máy chủ"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
